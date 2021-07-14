@@ -13,6 +13,18 @@ public class FileUtil {
     //可播放的高质量音频文件
     private final static String AUDIO_WAV_PATH = "/wav/";
 
+    private final static String AUDIO_IMAGE_PATH = "/image/";
+
+    public static String getAbsolutePath(String fileName) {
+        String fileBasePath = appContext.getCacheDir() + AUDIO_IMAGE_PATH;
+        File file = new File(fileBasePath);
+        //创建目录
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+
+        return fileBasePath + fileName;
+    }
 
     public static String getPcmFileAbsolutePath(String fileName) {
         String fileBasePath = appContext.getCacheDir() + AUDIO_PCM_PATH;

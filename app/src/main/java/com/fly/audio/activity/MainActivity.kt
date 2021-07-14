@@ -18,4 +18,7 @@ class MainActivity : BaseBindActivity<ActivityMainBinding>() {
     val onClickPlay = Bind.onClick {
         PlayActivity.startActivity(this)
     }
+    val onClickCrop = Bind.onClick {
+        CropActivity.startActivity(this)
+    }
 }

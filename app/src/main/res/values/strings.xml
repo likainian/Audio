@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Audio</string>
+    <string name="crop_adjust">Adjust</string>
+    <string name="crop_3_4">3:4</string>
+    <string name="crop_1_1">1:1</string>
+    <string name="crop_4_3">4:3</string>
+    <string name="placeholder_crop_degrees">%d°</string>
 </resources>

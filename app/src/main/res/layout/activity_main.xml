@@ -37,5 +37,15 @@
             android:background="@drawable/selector_btn"
             android:padding="10dp"
             android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剪切界面"
+            android:view_onClick="@{owner.onClickCrop}"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_btn"
+            android:padding="10dp"
+            android:layout_margin="10dp" />
     </LinearLayout>
 </layout>

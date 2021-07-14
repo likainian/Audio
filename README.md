@@ -19,3 +19,9 @@ MVVM相较mvp多的是数据和视图的对应关系，从而更彻底的解耦v
 databing的data设置和自定义adapter都有体现,双向绑定因为没有具体应用场景，在项目中没有。
 
 kotlin主要是一些判断空，高阶函数，以及java调用kotlin时的一些注解。
+
+
+com.fly.audio.widgets.crop.image文件夹是我之前写的剪切比较能体现面对对象思想：
+TransformImageView->CropImageView->GestureCropImageView
+之间时继承关系，TransformImageView管理图片变换，CropImageView管理剪切，GestureCropImageView管理手势
+是比较复杂的业务逻辑关系。(只截取了部分功能)
