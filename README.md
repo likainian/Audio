@@ -7,3 +7,15 @@
 
 1，使用MVVM设计模式，
 2.git管理代码，
+
+项目介绍：
+app项目主model
+
+core项目的base相关。
+
+主要展示MVVM和databinding，以及kotlin的使用。
+MVVM相较mvp多的是数据和视图的对应关系，从而更彻底的解耦view和逻辑处理。
+
+databing的data设置和自定义adapter都有体现,双向绑定因为没有具体应用场景，在项目中没有。
+
+kotlin主要是一些判断空，高阶函数，以及java调用kotlin时的一些注解。

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <data>
+        <variable
+            name="owner"
+            type="com.fly.audio.activity.MainActivity" />
+    </data>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -9,16 +15,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="录音界面"
+            android:view_onClick="@{owner.onClickRecord}"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_btn"
+            android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="文本转音频界面"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_btn"
+            android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="回放界面"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_btn"
+            android:padding="10dp"
             android:layout_margin="10dp" />
     </LinearLayout>
 </layout>

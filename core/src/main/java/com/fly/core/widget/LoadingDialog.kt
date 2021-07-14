@@ -5,7 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatDialog
 import com.fly.core.R
 
-class LoadingDialog(context: Context, themeId: Int = R.style.LoadingDialog) : AppCompatDialog(context, themeId) {
+//java调用重载添加注解@JvmOverloads
+class LoadingDialog @JvmOverloads constructor(context: Context, themeId: Int = R.style.LoadingDialog) : AppCompatDialog(context, themeId) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
