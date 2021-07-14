@@ -20,7 +20,7 @@ class RecordViewModel : BaseViewModel() {
     var recordList = MutableLiveData<String>() //录音列表
     var recordStatus = MutableLiveData<Boolean>() //录音状态
     var recordTime = MutableLiveData<Int>() //录音时间
-    var recordWords = MutableLiveData("按住录音") //录音
+    var recordWords = MutableLiveData("按住录音") //录音按钮
 
     private var subscribe: Disposable? = null
 

@@ -2,7 +2,6 @@ package com.fly.audio.activity
 
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
 import android.view.MotionEvent
 import androidx.lifecycle.ViewModelProvider
 import com.fly.audio.databinding.ActivityRecordBinding
@@ -37,9 +36,11 @@ class RecordActivity : BaseBindActivity<ActivityRecordBinding>() {
         return binding
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun initView() {
         PermissionUtil.checkAudio(this)
+    }
+
+    override fun initData() {
         vm.getPcmFiles()
     }
 

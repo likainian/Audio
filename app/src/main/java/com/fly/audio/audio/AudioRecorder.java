@@ -21,7 +21,8 @@ public class AudioRecorder {
     //采样频率一般共分为22.05KHz、44.1KHz、48KHz三个等级
     private final static int AUDIO_SAMPLE_RATE = 16000;
     //声道 单声道
-    private final static int AUDIO_CHANNEL = AudioFormat.CHANNEL_IN_MONO;
+    private final static int AUDIO_CHANNEL = AudioFormat.CHANNEL_IN_DEFAULT;
+
     //编码
     private final static int AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT;
     // 缓冲区字节大小
@@ -52,8 +53,8 @@ public class AudioRecorder {
         Log.d("AudioRecorder", "===startRecord===");
         // 获得缓冲区字节大小
         bufferSizeInBytes = AudioRecord.getMinBufferSize(AUDIO_SAMPLE_RATE, AUDIO_CHANNEL, AUDIO_ENCODING);
-        audioRecord = new AudioRecord(AUDIO_INPUT, AUDIO_SAMPLE_RATE, AUDIO_CHANNEL, AUDIO_ENCODING, bufferSizeInBytes);
 
+        audioRecord = new AudioRecord(AUDIO_INPUT, AUDIO_SAMPLE_RATE, AUDIO_CHANNEL, AUDIO_ENCODING, bufferSizeInBytes);
         audioRecord.startRecording();
 
         fileName = String.valueOf(System.currentTimeMillis());
@@ -139,6 +140,7 @@ public class AudioRecorder {
             public void run() {
                 if (PcmToWav.mergePCMFilesToWAVFile(filePaths, FileUtil.getWavFileAbsolutePath(fileName))) {
                     //操作成功
+                    Log.i("AudioRecorder","录音完成："+FileUtil.getPcmFileAbsolutePath(fileName));
                 } else {
                     //操作失败
                     Log.e("AudioRecorder", "mergePCMFilesToWAVFile fail");

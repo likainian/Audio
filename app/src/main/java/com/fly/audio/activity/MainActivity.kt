@@ -14,4 +14,8 @@ class MainActivity : BaseBindActivity<ActivityMainBinding>() {
     val onClickRecord = Bind.onClick {
         RecordActivity.startActivity(this)
     }
+
+    val onClickPlay = Bind.onClick {
+        PlayActivity.startActivity(this)
+    }
 }
