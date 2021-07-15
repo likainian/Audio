@@ -34,6 +34,25 @@ android {
     dataBinding {
         enabled = true
     }
+
+    signingConfigs {
+        debug {
+            storeFile file('./chat.jks')
+            storePassword '123qwe'
+            keyAlias = 'chat'
+            keyPassword '123qwe'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        release {
+            storeFile file('./chat.jks')
+            storePassword '123qwe'
+            keyAlias = 'chat'
+            keyPassword '123qwe'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
 }
 
 dependencies {
