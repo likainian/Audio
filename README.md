@@ -8,6 +8,7 @@
 1，使用MVVM设计模式，
 2.git管理代码，
 
+apk地址：https://github.com/likainian/Audio/blob/master/app/release/app-release.apk
 项目介绍：
 app项目主model
 
