@@ -7,7 +7,7 @@ import java.io.IOException
 
 /**
  * Created by likainian on 2021/7/15
- * Description:
+ * Description:下载文件进度
  */
 
 class ProgressResponseBody(private val responseBody: ResponseBody) : ResponseBody() {

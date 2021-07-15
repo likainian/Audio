@@ -8,6 +8,11 @@ import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 import android.view.ScaleGestureDetector.SimpleOnScaleGestureListener
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  手势变换
+ */
+
 class GestureCropImageView constructor(context: Context,attrs: AttributeSet? = null)
     : CropImageView(context,attrs) {
     private var mScaleDetector: ScaleGestureDetector? = null

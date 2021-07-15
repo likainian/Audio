@@ -21,7 +21,10 @@ import java.io.IOException
 
 const val MAX_DOUBLE = Int.MAX_VALUE.toDouble()
 const val MIN_DOUBLE = 1.0
-
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  bitmap工具类
+ */
 
 /**
  * 旋转图片，使图片保持正确的方向。
@@ -231,8 +234,7 @@ fun Bitmap.masking(mask: Bitmap?): Bitmap {
     val maskW = mask.width
     val maskH = mask.height
 
-    val useMask: Bitmap
-    useMask = if (w != maskW || h != maskH) {
+    val useMask: Bitmap = if (w != maskW || h != maskH) {
         val m = mask.resize(w, h)
         mask.recycle()
         m
@@ -336,7 +338,7 @@ fun Bitmap.saveToFile(
     file: File, format: Bitmap.CompressFormat = Bitmap.CompressFormat.PNG, @IntRange(from = 0, to = 100) quality: Int = 100): Boolean {
     return file.outputStream().buffered().let {
         compress(format, quality, it)
-    } ?: false
+    }
 }
 
 fun Bitmap.toHorizontalMirror(): Bitmap {
@@ -388,7 +390,7 @@ fun Bitmap.cropRate(): Float {
  * 图片转base64
  */
 fun Bitmap.toBase64(): String {
-    var result: String = ""
+    var result = ""
     var baos: ByteArrayOutputStream? = null
     try {
         baos = ByteArrayOutputStream()

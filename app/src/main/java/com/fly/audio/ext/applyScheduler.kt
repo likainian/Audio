@@ -7,6 +7,11 @@ import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  指定rxjava的线程
+ */
+
 fun <T> Observable<T>.applyScheduler(subscribeOn: Scheduler = Schedulers.io()): Observable<T> {
     return compose(SchedulerTransformer.apply(subscribeOn))
 }

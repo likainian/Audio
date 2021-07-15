@@ -5,6 +5,10 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import com.fly.audio.ext.dp2px
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  覆盖的矩形框
+ */
 
 class OverlayView @JvmOverloads constructor(context: Context?,
     attrs: AttributeSet? = null, defStyle: Int = 0) : View(context, attrs, defStyle) {

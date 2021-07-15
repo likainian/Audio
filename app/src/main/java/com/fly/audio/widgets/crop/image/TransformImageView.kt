@@ -9,7 +9,11 @@ import androidx.appcompat.widget.AppCompatImageView
 import com.fly.audio.util.RectUtils.getCenterFromRect
 import com.fly.audio.util.RectUtils.getCornersFromRect
 
-//整型数组，选择点最近的一点。
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  图片矩阵变换
+ */
+
 open class TransformImageView constructor(context: Context,attrs: AttributeSet?) : AppCompatImageView(context, attrs) {
     protected val mCurrentImageCorners = FloatArray(8)
     protected val mCurrentImageCenter = FloatArray(2)

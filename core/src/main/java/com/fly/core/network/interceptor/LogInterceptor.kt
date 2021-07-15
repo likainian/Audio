@@ -1,6 +1,6 @@
 package com.fly.core.network.interceptor
 
-import com.fly.audio.util.LogUtil
+import com.fly.core.util.LogUtil
 import okhttp3.Interceptor
 import okhttp3.Response
 import okio.Buffer
@@ -8,7 +8,7 @@ import java.io.IOException
 
 /**
  * Created by likainian on 2021/7/15
- * Description:
+ * Description:请求日志打印
  */
 
 class LogInterceptor : Interceptor {

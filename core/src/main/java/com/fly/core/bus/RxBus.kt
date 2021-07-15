@@ -7,6 +7,12 @@ import io.reactivex.functions.Consumer
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject
 
+
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  事件，代替广播
+ */
+
 class RxBus private constructor() {
     private val _bus: Subject<Event> = PublishSubject.create()
 

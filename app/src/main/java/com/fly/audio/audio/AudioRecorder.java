@@ -13,6 +13,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
+
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  录音的工具
+ */
+
 public class AudioRecorder {
     //音频输入-麦克风
     private final static int AUDIO_INPUT = MediaRecorder.AudioSource.MIC;

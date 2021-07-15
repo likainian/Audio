@@ -4,6 +4,10 @@ package com.fly.core.base.bindbase
 import android.os.Bundle
 import androidx.databinding.ViewDataBinding
 import com.fly.core.base.BaseActivity
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  bind的基类
+ */
 
 abstract class BaseBindActivity<K : ViewDataBinding> : BaseActivity() {
 

@@ -8,6 +8,11 @@ import androidx.annotation.CallSuper
 import androidx.databinding.ViewDataBinding
 import com.fly.core.base.BaseFragment
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  bind的基类
+ */
+
 abstract class BaseBindFragment<K : ViewDataBinding> : BaseFragment() {
 
     protected lateinit var mViewDataBinding: K

@@ -9,6 +9,11 @@ import com.fly.audio.util.RectUtils.getCornersFromRect
 import com.fly.audio.util.RectUtils.getRectSidesFromCorners
 import com.fly.audio.util.RectUtils.trapToRect
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  负责剪切图片
+ */
+
 open class CropImageView constructor(context: Context,attrs: AttributeSet?) : TransformImageView(context,attrs) {
     val mCropRect = RectF()
     private val mTempMatrix = Matrix()

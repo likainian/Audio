@@ -1,6 +1,10 @@
 package com.fly.audio.util
 
 import android.graphics.RectF
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  矩形工具类
+ */
 
 object RectUtils {
     @JvmStatic

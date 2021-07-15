@@ -6,8 +6,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.fly.audio.adapter.PlayAdapter
 import com.fly.audio.databinding.ActivityPlayBinding
+import com.fly.audio.util.PermissionUtil
 import com.fly.audio.viewmodel.PlayViewModel
 import com.fly.core.base.bindbase.BaseBindActivity
+
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  播放列表页面
+ */
 
 class PlayActivity : BaseBindActivity<ActivityPlayBinding>() {
 
@@ -21,6 +27,10 @@ class PlayActivity : BaseBindActivity<ActivityPlayBinding>() {
         return ActivityPlayBinding.inflate(layoutInflater).apply {
             owner = this@PlayActivity
         }
+    }
+
+    override fun initView() {
+        PermissionUtil.checkAudio(this)
     }
 
     private val vm by lazy {

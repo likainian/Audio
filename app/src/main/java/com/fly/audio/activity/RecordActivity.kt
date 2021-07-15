@@ -14,7 +14,7 @@ import com.fly.core.base.bindbase.BaseBindActivity
 
 /**
  * Created by likainian on 2021/7/13
- * Description:
+ * Description:录音界面
  */
 
 class RecordActivity : BaseBindActivity<ActivityRecordBinding>() {
@@ -41,7 +41,7 @@ class RecordActivity : BaseBindActivity<ActivityRecordBinding>() {
     }
 
     override fun initData() {
-        vm.getPcmFiles()
+        vm.getAudioFiles()
     }
 
     val onTouchRecord = Bind.onTouch { _, event ->
@@ -54,7 +54,7 @@ class RecordActivity : BaseBindActivity<ActivityRecordBinding>() {
                 MotionEvent.ACTION_UP->{
                     vm.stopRecord()
                     vm.stopTime()
-                    vm.getPcmFiles()
+                    vm.getAudioFiles()
                 }
             }
         }else{

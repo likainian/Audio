@@ -8,6 +8,10 @@ import android.view.LayoutInflater
 import android.widget.FrameLayout
 import com.fly.audio.R
 import com.fly.audio.widgets.crop.image.GestureCropImageView
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  整个剪切整合
+ */
 
 class CropView constructor(context: Context, attrs: AttributeSet? = null
 ) : FrameLayout(context, attrs) {

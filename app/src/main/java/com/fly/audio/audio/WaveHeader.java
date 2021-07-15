@@ -3,6 +3,11 @@ package com.fly.audio.audio;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  PcmToWav参数
+ */
+
 public class WaveHeader {
     public final char fileID[] = {'R', 'I', 'F', 'F'};
     public int fileLength;

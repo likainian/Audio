@@ -2,6 +2,11 @@ package com.fly.audio.ext
 
 import com.fly.core.base.appContext
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  屏幕的宽高
+ */
+
 object Screen {
 
     var width = 0 // 屏幕宽度

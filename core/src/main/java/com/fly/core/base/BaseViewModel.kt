@@ -5,6 +5,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
 /**
+ * Created by likainian on 2021/7/13
  * MVVM BaseViewModel (ViewModel don't hold View, store and manage UI-related data)
  */
 abstract class BaseViewModel : ViewModel() {

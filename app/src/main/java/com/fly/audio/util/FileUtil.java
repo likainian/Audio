@@ -7,6 +7,11 @@ import java.util.List;
 
 import static com.fly.core.base.BaseApplicationKt.appContext;
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  文件工具类
+ */
+
 public class FileUtil {
     //原始文件
     private final static String AUDIO_PCM_PATH = "/pcm/";
@@ -27,6 +32,9 @@ public class FileUtil {
     }
 
     public static String getPcmFileAbsolutePath(String fileName) {
+        if (!fileName.endsWith(".pcm")) {
+            fileName = fileName + ".pcm";
+        }
         String fileBasePath = appContext.getCacheDir() + AUDIO_PCM_PATH;
         File file = new File(fileBasePath);
         //创建目录

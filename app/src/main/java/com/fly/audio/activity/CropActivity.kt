@@ -9,6 +9,10 @@ import com.fly.audio.frag.CropEditFrag
 import com.fly.audio.util.PermissionUtil
 import com.fly.core.base.bindbase.BaseBindActivity
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  剪切界面
+ */
 
 class CropActivity : BaseBindActivity<ActivityCropBinding>(){
 
@@ -23,7 +27,7 @@ class CropActivity : BaseBindActivity<ActivityCropBinding>(){
 
 
     override fun initView() {
-        PermissionUtil.checkAudio(this)
+        PermissionUtil.checkRead(this)
         val intent = Intent(
             Intent.ACTION_PICK,
             MediaStore.Images.Media.EXTERNAL_CONTENT_URI

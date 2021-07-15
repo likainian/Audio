@@ -1,6 +1,10 @@
 package com.fly.audio.ext
 
 import android.content.res.Resources
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  dp px
+ */
 
 fun Float.dp2px(): Int {
     val scale = Resources.getSystem().displayMetrics.density

@@ -4,6 +4,11 @@ import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.View
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  绑定事件
+ */
+
 @Suppress("unused")
 object Bind {
 

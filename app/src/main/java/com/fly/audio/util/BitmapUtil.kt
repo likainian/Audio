@@ -11,6 +11,11 @@ import java.io.IOException
 import java.lang.reflect.Field
 import kotlin.math.roundToInt
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  bitmap工具类
+ */
+
 object BitmapUtil {
 
     /**

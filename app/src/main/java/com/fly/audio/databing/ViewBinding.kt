@@ -7,6 +7,11 @@ import androidx.databinding.BindingAdapter
 import com.fly.audio.databing.onbind.OnClickBinding
 import com.fly.audio.databing.onbind.OnTouchBinding
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  自定义view事件绑定
+ */
+
 object ViewBinding {
 
     private const val ON_CLICK = BINDING_PREFIX + "view_onClick"

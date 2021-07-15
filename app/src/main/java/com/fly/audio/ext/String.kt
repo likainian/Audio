@@ -14,6 +14,11 @@ import java.util.regex.Pattern
 import kotlin.math.pow
 
 /**
+ * Created by likainian on 2021/7/13
+ * Description:  string工具类
+ */
+
+/**
  * 根据图片绝对路径，查看该图片是否旋转过
  */
 fun String.readPictureDegree(): Int {

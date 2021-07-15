@@ -8,7 +8,7 @@ import java.io.File
 
 /**
  * Created by likainian on 2021/7/14
- * Description:
+ * Description:播放列表适配器
  */
 
 class PlayAdapter : BaseQuickAdapter<File, BaseDataBindingHolder>(R.layout.item_play) {

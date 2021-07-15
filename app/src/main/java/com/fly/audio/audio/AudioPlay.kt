@@ -4,6 +4,10 @@ import android.media.*
 import android.util.Log
 import java.io.*
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  播放的工具
+ */
 
 object AudioPlay{
 

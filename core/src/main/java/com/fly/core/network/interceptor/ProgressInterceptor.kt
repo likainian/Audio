@@ -6,7 +6,7 @@ import java.io.IOException
 
 /**
  * Created by likainian on 2021/7/15
- * Description:
+ * Description:请求下载文件进度
  */
 
 class ProgressInterceptor : Interceptor {

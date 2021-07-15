@@ -4,6 +4,11 @@ import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  自定义recycler绑定
+ */
+
 object RecyclerViewBinding {
     private const val ADAPTER = BINDING_PREFIX + "recyclerview_adapter"
     private const val LAYOUT_MANAGER = BINDING_PREFIX + "recyclerview_layoutManager"

@@ -7,6 +7,11 @@ import android.view.View
 import com.fly.audio.R
 import com.fly.audio.ext.Res
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  进度条
+ */
+
 class ProgressView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,

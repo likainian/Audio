@@ -25,3 +25,5 @@ com.fly.audio.widgets.crop.image文件夹是我之前写的剪切比较能体现
 TransformImageView->CropImageView->GestureCropImageView
 之间时继承关系，TransformImageView管理图片变换，CropImageView管理剪切，GestureCropImageView管理手势
 是比较复杂的业务逻辑关系。(只截取了部分功能)
+
+说明：网络连接部分，做了一个简单地封装，没有请求。语音合成的也放在录音文件夹了

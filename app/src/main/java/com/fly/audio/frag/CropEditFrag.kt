@@ -17,6 +17,11 @@ import com.fly.audio.util.FileUtil
 import com.fly.core.base.bindbase.BaseBindFragment
 import java.io.File
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  剪切页面
+ */
+
 class CropEditFrag : BaseBindFragment<FragCropEditBinding>() {
 
     companion object {

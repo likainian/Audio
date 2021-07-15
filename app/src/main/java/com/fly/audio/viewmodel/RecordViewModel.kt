@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit
 
 /**
  * Created by likainian on 2021/7/13
- * Description:
+ * Description:录音，计时间，录音文件列表
  */
 
 class RecordViewModel : BaseViewModel() {
@@ -57,7 +57,7 @@ class RecordViewModel : BaseViewModel() {
         subscribe?.dispose()
     }
 
-    fun getPcmFiles(){
+    fun getAudioFiles(){
         addDisposable(
             Observable.timer(1,TimeUnit.SECONDS)
                 .subscribe {

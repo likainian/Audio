@@ -10,6 +10,11 @@ import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import com.fly.core.base.appContext
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  res工具类
+ */
+
 object Res {
 
     fun getString(@StringRes id: Int, context: Context = appContext): String =

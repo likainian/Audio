@@ -15,6 +15,11 @@ import android.view.View
 import com.fly.audio.ext.dp2px
 import com.fly.core.base.appContext
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  刻度view
+ */
+
 class DegreesView @JvmOverloads constructor(context: Context?, attrs: AttributeSet? = null) : View(context, attrs) {
     private var mLinePaint = Paint(Paint.ANTI_ALIAS_FLAG) //垂直刻度线画笔
     private var mIndicatorPaint = Paint(Paint.ANTI_ALIAS_FLAG) //指示器刻度值画笔

@@ -12,6 +12,11 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 
+/**
+ * Created by likainian on 2021/7/13
+ * Description:  PcmToWav
+ */
+
 public class PcmToWav {
     /**
      * 合并多个pcm文件为一个wav文件
